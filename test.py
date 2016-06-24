@@ -8,16 +8,19 @@ def name():
  print "Do you want to change your name?"
  option = raw_input("Yes/No:")
  
- while option != "Yes" or "No":
-  if option == "Yes":
+ option = option.lower()
+ 
+ while option != "yes" or "no":
+  if option == "yes":
    print "Write your name:"
    name_char = raw_input("> ")
+   exit()
    
-  elif option == "No":
+  elif option == "no":
    print "Alright,let's start then."
-   
+   exit()
   else:
    print "Please enter Yes or No"
-   option = 
+   name()
      
 name()
