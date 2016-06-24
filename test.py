@@ -12,10 +12,10 @@ def name():
   if option == "Yes":
    print "Write your name:"
    name_char = raw_input("> ")
-   exit()
+   
   elif option == "No":
    print "Alright,let's start then."
-   exit()
+   
   else:
    print "Please enter Yes or No"
    name()
